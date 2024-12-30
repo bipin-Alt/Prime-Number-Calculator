@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Calculator</title>
+    <!--Styling-->
+    <link rel="stylesheet" href="PrimeNumber.CSS">
+</head>
+<body>
+    <!--All container-->
+    <section class="calculator-container">
+        <!--titles-->
+        <div class="title">
+            <h3>Prime Number Calculator</h3>
+            <h4>Wanna know which number is prime and which is not? </h4>
+            <h5>Enter the number and the calculator will tell instantly.</h5>
+        </div>
+        <!--user input section-->
+        <div class="input-container">
+            <input type="number" id="number" placeholder="Enter the number">
+            <!--button to check for prime number-->
+            <button id="check-btn" class="button">Compute</button>
+            <!--button to clear the input field-->
+            <button id="clear-btn" class="button">Clear</button>
+        </div>
+        <!--Output container-->
+        <div class="output-container">
+            <p id="output"></p>
+        </div>
+        <!--Info about prime numbers-->
+        <div class="info">
+            <p>
+                The numbers that are positive, non-zero and are only divisible by 1 and the number itself are called prime numbers.
+            </p>
+        </div>
+    </section>
+    <script src="PrimeNumber.JS"></script>
+</body>
+</html>

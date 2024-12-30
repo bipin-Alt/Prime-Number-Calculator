@@ -1,0 +1,98 @@
+/* declaration of variables  */
+:root {
+   --background-color:#012340;
+   --text-color :#D9D8D2 ;
+   --buttonBackground : #384D59;
+   --buttonTextColor : #F0F0F2;
+   --buttonHoverBackground :#253540;
+   --transition : all .3s linear;
+   --box-shadow :#D96941 ;
+   --border-radius : .25rem;
+    --font-size : 1rem;
+    --letter-spacing : .25rem;
+    --line-height : 1.5rem;
+    --padding : .5rem 1rem;
+
+}
+
+/* deleting the default margin and padding */
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the section */
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin-top:5rem;
+    background-color: var(--background-color);
+    padding:2rem;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 1.7rem var(--box-shadow);
+    line-height: var(--line-height);
+    transition: var(--transition);
+}
+.title h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.title h5{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: var(--letter-spacing);
+}
+
+/* styling the input container */
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+#number{
+    padding: var(--padding);
+    width:11rem;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: #BFBE9C;
+    color: #010221;
+    font-size: var(--font-size);
+    transition: var(--transition);
+}
+.button{
+    padding: var(--padding);
+    width: 8rem;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--buttonBackground);
+    color: var(--buttonTextColor);
+    font-size: var(--font-size);
+    transition: var(--transition);
+    cursor: pointer;
+    letter-spacing: var(--letter-spacing);
+}
+.button:hover{
+    background-color: var(--buttonHoverBackground);
+}
+#output{
+   font-size: 1.2rem;
+   letter-spacing:var(--letter-spacing);
+   font-family: Tahoma, Geneva, Verdana, sans-serif;
+   color: #F2E2CE;
+}
+.info{
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+}
